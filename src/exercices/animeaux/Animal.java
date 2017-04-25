@@ -14,5 +14,10 @@ abstract public class Animal {
     protected int x=0;
     protected int y=0;
     abstract public void bouger();
-    abstract public void manger();
+    abstract public void parler();
+
+    public Animal(String nom) {
+        this.nom = nom;
+    }
+    
 }

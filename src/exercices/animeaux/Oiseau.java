@@ -9,23 +9,21 @@ package exercices.animeaux;
  *
  * @author Administrateur
  */
-public class Poisson extends Animal{
+public class Oiseau extends Animal{
 
-    public Poisson(String nom) {
+    public Oiseau(String nom) {
         super(nom);
     }
-
-
-
-    @Override
+        @Override
     public void bouger() {
-        this.x++;
-        System.out.println(String.format("%s nage vers la position: %d %d ", this.nom,this.x,this.y));
+        x+=2; 
+        y+=2;
+        System.out.println(String.format("%s Vol vers la position: %d %d ", this.nom,this.x,this.y));
     }
 
     @Override
     public void parler() {
-         System.out.println("bok bok bok");
+        System.out.println("ziou ziou");
+         
     }
-    
 }
